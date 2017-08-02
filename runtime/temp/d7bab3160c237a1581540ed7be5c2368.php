@@ -1,0 +1,33 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\tpadmin\public/../application/home\view\index\index.html";i:1500976452;}*/ ?>
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>首页</title>
+    <link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" href="__STATIC__/css/style.css">
+    <script src="__STATIC__/js/flexible.js"></script>
+  
+
+</head>
+<body>
+    <div class="container idx-container">
+        <a href="javascript:;" class="logo"></a>
+        <div class="info tc">
+            <a class="btn-01 mb40" href="/home/index/menu">PN计算器</a>
+            <a class="btn-01" href="/home/index/ywjs">药物剂量速算</a>
+        </div>
+    </div>
+    <div id="footer">此应用程序版权归属华润双鹤药业股份有限公司所有</div>
+</body>
+</html>
+<script>
+var localStorage = window.localStorage;
+var mobile       = localStorage.getItem("mobile");
+if(!mobile){
+	window.location.href="/home/index/login?mobile=" +mobile;
+}
+</script>

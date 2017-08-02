@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+@function u($n){@return $n/100+rem;}
+
+/**首页**/
+.idx-container{background:url(../images/idx-bg.jpg) no-repeat;background-size: 100% auto;min-height: u(820);padding:u(22) 0 0 0;
+	.info{padding:u(760) 0 0 0;}
+	.form{padding:u(660) 0 0 0;text-align: center;}
+	.yzm{width: u(690);height:u(100);background: none;margin:0 auto u(40);text-align: left;
+		input{width: u(430);color: #333;font-size: u(40);border-radius: u(15) 0 0 u(15);text-align: center;line-height: u(98);background:none;border:1px #87ccc3 solid;border-right: 0;height: u(100);vertical-align: middle;}
+		.btn-yzm{display: inline-block;width: u(255);background:#4ab6ab;font-size: u(40);border-radius:0  u(15) u(15) 0;color: #fff;text-align: center;border-radius: 0 u(15) u(15) 0;border:1px #87ccc3 solid;border-left: 0;height: u(100);vertical-align: middle;line-height: u(98)}
+		.btn-yzm-dis{background:#999;}
+	}
+}	
+.logo{background:url(../images/logo.png) no-repeat;background-size: 100% 100% ;width: u(331);height: u(81);display: inline-block;margin-left: u(30)}
+
+
+.menu-container,.calculator-container,.data-container,.operation-container,.list-container{background:url(../images/bg01.jpg);background-size: 100% 100% ;height: u(1207);padding-top: u(22);
+	.info{padding-top: u(155)}
+}
+
+/**病患列表**/
+.list-container{background-image:url(../images/bg05.jpg);padding-top: u(20);	
+	.search-info{margin:0 0 u(20) u(17);border:1px #eee solid;border-radius: u(10);float:left;background:#fff;line-height: u(80);
+		input[type="text"]{border-radius: u(10) 0 0 u(10);float:left;height:u(80);line-height: u(80);width:u(520);font-size: u(32);padding-left: u(10);border:0;vertical-align: middle}
+		a.del{color:#cccccc;font-size: u(38);vertical-align: middle;float:left;margin-right: u(20)}
+		input[type="submit"]{border-radius:0 u(10) u(10) 0;float:left;appearance:none;-webkit-appearance:none;height:u(80);width:u(140);font-size: u(36);border:0;vertical-align: middle;background:#008a7c;color:#fff}
+		
+	}
+	.list{clear:both;background:rgba(255,255,255,0.6);padding:0 u(30) 0;line-height: u(65);
+		li{border-bottom: 1px #ccc solid;height:u(199);padding-top: u(25);
+			span{font-size: u(36)}
+			em{font-size: u(30);color:#666}
+			i{float:right;color:#ccc;font-size: u(38);margin-top: u(60)}
+		}
+		li:last-child{border-bottom: 0}
+
+	}
+}
+
+/**数据**/
+.data-container{background-image:url(../images/bg04.jpg);padding-top: 0;
+	.data-info{font-size: u(30);color:#666;background:rgba(255,255,255,0.6);height:u(190);margin-bottom: u(17);padding:u(25) 0 0 u(30);line-height: u(70);
+		div{font-size: u(36);color:#333}
+	}
+	.data-bd{color:#222;height:u(810);background:rgba(255,255,255,0.6);padding:u(30) 0;font-size: u(30);line-height: u(65);
+		.data-left{text-align: left;width:u(410);position:absolute;padding-left: u(30);z-index: 999;background:rgba(255,255,255,0.1);}
+		.tit{font-weight: bold}
+		.data-con{display: -webkit-flex;display: flex;width:u(1700);
+			.data-day{border-left: 1px #ccc solid;padding:0 u(30); box-flex:1.0; -webkit-box-flex:1.0}
+			
+		}
+		.data-all{overflow-x:auto;width:u(340);margin-left: u(410);}
+
+	}
+}
+
+/**运算**/
+.operation-container{background-image:url(../images/bg04.jpg);padding:u(30) u(20) 0;font-size: u(24);line-height: u(58);
+	.info{padding:0;height:u(68)}
+	.calculator-btn{
+		a:nth-child(1){margin:0 u(30) 0 0;}
+	}
+	ul{padding-bottom: u(70)}
+	li{height:u(60);clear: both}
+	select{width:100%;border:1px #e5e5e5 solid;height:u(60);border-radius: u(6);font-size: u(32);padding-left: u(15)}
+	.hr{margin:u(20) 0;height:u(8);background:rgba(255,255,255,0.4);}
+	span{float:left}
+	.info-01,.info-06,.info-08{letter-spacing: u(4);text-align:center;font-size: u(28);height: u(60);line-height: u(58);border:1px #e5e5e5 solid;border-radius: u(6) 0 0 u(6);width: u(255);background:#eee;border-right:0;float: left;		}
+	
+	.info-02,.info-03,.info-05,.info-07,.info-09{font-size: u(28);height: u(60);line-height: u(58);border-radius:0 u(6) u(6) 0;background:#f2f2f2;border:1px #e5e5e5 solid;border-left:0;float: left;vertical-align: middle;
+		input{width: u(275);vertical-align: middle;height: u(40);line-height: u(40);border:0;background:none;text-align: center;color: #555}
+	}
+	.info-03{
+		input{width:u(125)}
+	}
+	.info-03{
+		input{width:u(125)}
+	}
+	.info-04{width:u(65);text-align: center}
+	.info-05{border:1px #e5e5e5 solid;border-radius: 0;
+		input{width:u(82)}
+	}
+	.info-06{letter-spacing: u(3);width:u(135)}
+	.info-07{
+		input{width:u(78)}
+	}
+	.info-09{
+		input{width:u(85)}
+	}
+	.info-08{letter-spacing: u(2);width:u(165)}
+}
+/**计算器**/
+.calculator-container{background-image:url(../images/bg02.jpg);padding-top: 0;
+	.calculator-con{overflow-x: auto;width: u(750);}
+	.calculator-btn{
+		a{margin:0 u(10);}
+	}
+	.warp{display: -webkit-flex;display: flex;padding:u(30) 0 0 0;height: u(1040);width:u(2250)}
+	.warp > div{margin-right: u(30);}
+	.warp > div:first-child table{margin-left: u(30)}
+}
+
+.calculator-01{width: u(585);text-align: center;font-size: u(24);color: #555555;line-height: u(58);
+	td{padding:0 0 u(8) 0;}
+	td:nth-child(1){width:u(90);}
+	td:last-child{text-align: right;width:u(190)}
+	td:nth-child(1).td{width: auto;}
+	.info-01{font-size: u(28);height: u(60);line-height: u(58);border:1px #e5e5e5 solid;border-radius: u(10) 0 0 u(10);width: 100%;background:#fff;border-right:0;float: left;
+		select{font-size: u(28);width: 100%;border:0;padding-left: u(8);color: #555;}
+
+	}
+	.info-02,.info-04{font-size: u(28);height: u(60);line-height: u(58);width: 100%;background:#eee;border:1px #e5e5e5 solid;float: left;
+		i{display: inline-block;width: u(270);text-align: right;padding-right:u(10);}
+	}
+	.info-03{font-size: u(28);height: u(60);line-height: u(58);margin-right: u(10);border-radius:0 u(10) u(10) 0;background:#f2f2f2;width: u(135);border:1px #e5e5e5 solid;border-left:0;float: left;
+		input{width: u(130);vertical-align: middle;height: u(40);line-height: u(40);border:0;background:none;text-align: right;padding-right: u(10);color: #555}
+	}
+	.info-04{border-left: 0;border-radius: u(10) 0 0 u(10);
+		i{width: 100%}
+	}
+}	
+
+.calculator-02{width: u(885);text-align: center;font-size: u(24);color: #555555;
+	td{padding:0 0 u(8) 0;}
+	td:nth-child(1){width:u(145);}
+	td:nth-child(2){width:u(280);text-align: left;line-height: u(58)}
+	td:last-child{text-align: left;padding-left: u(50)}
+	.info-01{font-size: u(28);height: u(60);line-height: u(58);border:1px #e5e5e5 solid;border-radius: u(10) 0 0 u(10);width: 100%;background:#eee;border-right:0;float: left;		}
+	
+	.info-02,.info-03{font-size: u(28);height: u(60);line-height: u(58);margin-right: u(10);border-radius:0 u(10) u(10) 0;background:#f2f2f2;border:1px #e5e5e5 solid;border-left:0;float: left;vertical-align: middle;
+		input{width: u(250);vertical-align: middle;height: u(40);line-height: u(40);border:0;background:none;text-align: center;color: #555}
+	}
+	.info-03{
+		input{width: u(135);margin-right: u(10)}
+	}
+}	
+
+.calculator-03{width: u(700);text-align: center;font-size: u(24);color: #555555;
+	td{padding:0 0 u(8) 0;}
+	td:nth-child(1){width:u(175);}
+	td:nth-child(2){width:u(275);text-align: left;line-height: u(58)}
+	td:last-child{text-align: left}
+	.info-01,.info-03{font-size: u(28);height: u(60);line-height: u(58);border:1px #e5e5e5 solid;border-radius: u(10) 0 0 u(10);width: 100%;background:#eee;border-right:0;float: left;		
+		select{font-size: u(28);width: 100%;border:0;padding-left: u(8);color: #555;background:none;padding-left: u(15);}
+
+	}
+	
+	.info-02,.info-04,.info-05{font-size: u(28);height: u(60);line-height: u(58);margin-right: u(10);border-radius:0 u(10) u(10) 0;background:#fff;border:1px #e5e5e5 solid;border-left:0;float: left;vertical-align: middle;
+		input,select{width: u(250);vertical-align: middle;height: u(40);line-height: u(40);border:0;background:none;color: #555;font-size: u(28);padding-left:u(10)}
+		option{padding-left: 0}
+	}
+	.info-03{width: u(125);text-align: center
+	}
+	.info-04{
+		input{width:u(98)}
+	}
+	.info-05{float:none;display:inline-block;border:1px #e5e5e5 solid;border-radius:u(5);margin-left: u(20);vertical-align: middle;
+		select{width:u(125)}
+	}
+}	
+
+.calculator-pn{overflow-y:auto;padding:u(15) u(5);
+	img{width:u(2000)}
+}
+
+
+
+
+
+
+

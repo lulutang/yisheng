@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="renderer" content="webkit" />
+<meta content="telephone=no" name="format-detection" />
+<title>患者数据</title>
+<link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" href="__STATIC__/css/style.css">
+    <script src="__STATIC__/js/flexible.js"></script>
+</head>
+<body>
+    <div class="list-container">
+      <div class="search-info">
+      <form action="/home/index/pnlist" >
+      <input type="text" id="keyword" name="keyword" value="<?php if($keyword==''){echo '';}else{echo $keyword;}?>" placeholder="<?php if($keyword==''){echo '请输入姓名/床号进行搜索';}else{echo $keyword;}?>">
+      <a id='close' class="del">X</a>
+      <input type="submit" value="搜索">
+      </form>
+      </div>
+      <div class="list">
+        <ul>
+        
+        {volist name="list" id="vo"}
+        
+        <li onclick="window.location='/home/index/pninfo?username={$vo.username}'">
+            <a href="/home/index/pninfo?username={$vo.username}">
+              <i>></i>
+              <span>姓名/床号：{$vo.username}</span><br>
+              <em>保存时间：{$vo.add_time|date='Y-m-d H:i:s',###}</em>
+            </a>
+          </li>
+
+       {/volist}
+        </ul>
+      </div>
+    </div>
+</body>
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.7.1-min.js"></script>
+<script>
+$("#close").click(function(){
+	$('#keyword').attr('value','');
+	$('#keyword').attr('placeholder','请输入姓名/床号进行搜索');
+	
+	
+});
+</script>
+</html>

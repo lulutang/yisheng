@@ -1,0 +1,129 @@
+{extend name="template/base" /}
+{block name="nav"}{/block}
+{block name="content"}
+<div class="page-container">
+    <form class="form form-horizontal" id="form" method="post" action="{:\\think\\Request::instance()->baseUrl()}">
+        <input type="hidden" name="id" value="{$list.id ?? ''}">
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">姓名：{$list.username ?? ''}  天数：{$list.day ?? ''}</label>
+            <label class="form-label col-xs-3 col-sm-3">{$list.key2 ?? ''}% 葡萄糖注射液：{$list.val2 ?? ''} ml</label>
+            <label class="form-label col-xs-3 col-sm-3">糖 能 量 ：{$list.tangnl ?? ''}   <!--40-50%  应<60%总热卡 --> </label>
+        </div>
+         <div class="row cl">
+           <label class="form-label col-xs-3 col-sm-3">输液方式：{$list.fangshi ?? ''}</label>
+             <label class="form-label col-xs-3 col-sm-3"> {$list.key3 ?? ''}% 葡萄糖注射液：{$list.val3 ?? ''} ml</label>
+            <label class="form-label col-xs-3 col-sm-3">AA 能量 ：{$list.aanl ?? ''}  15%</label>
+        </div>
+         <div class="row cl">
+           <label class="form-label col-xs-3 col-sm-3">体重：{$list.tizhong ?? ''} kg </label>
+           <label class="form-label col-xs-3 col-sm-3">{$list.key4 ?? ''} 水溶性维生素注射液：{$list.val4 ?? ''} ml </label>
+           <label class="form-label col-xs-3 col-sm-3">FAT能量：{$list.fatnl ?? ''}  35-45%  <!-- 应<60%总热卡 --></label>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-3 col-sm-3">{$list.key1 ?? ''}：{$list.val1 ?? ''} ml/次  {$list.val11 ?? ''} </label>
+            <label class="form-label col-xs-3 col-sm-3">{$list.key5 ?? ''}脂溶性维生素注射液：{$list.val5 ?? ''} ml </label>
+            <label class="form-label col-xs-3 col-sm-3"> 奶 能 量 ：{$list.nainl ?? ''} Kcal </label>
+        </div>
+       
+         <div class="row cl">
+         
+            <label class="form-label col-xs-3 col-sm-3">全天总液量：{$list.allday ?? ''}ml/kg </label>
+            <label class="form-label col-xs-3 col-sm-3">{$list.key6 ?? ''} 小儿复方氨基酸注射：{$list.val6 ?? ''} ml </label>
+            <label class="form-label col-xs-3 col-sm-3">PN能 量 ：{$list.pnnl ?? ''} Kcal</label>
+         
+          
+        </div>
+       
+           <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">非PN液量：{$list.notpn ?? ''} ml </label>
+            <label class="form-label col-xs-3 col-sm-3">{$list.key7 ?? ''}脂肪乳注射液：{$list.val7 ?? ''} ml  </label>
+            <label class="form-label col-xs-3 col-sm-3">总 能 量：{$list.zongnl ?? ''} Kcal</label>
+           
+          
+        </div>
+          <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">PN液量：{$list.pn ?? ''} ml {$list.key5 ?? ''}脂溶性维生素注射液：{$list.vel5 ?? ''} ml</label>
+            <label class="form-label col-xs-3 col-sm-3">10%氯化钠注射液 ：{$list.lvna ?? ''}  ml</label>
+            <label class="form-label col-xs-3 col-sm-3">渗 透 压 ：{$list.shentouya ?? ''} mOsm/L</label>
+          
+        </div>
+         <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">氨基酸：{$list.anjisuan ?? ''} ml </label>
+            <label class="form-label col-xs-3 col-sm-3">10%氯化钾注射液 ：{$list.lvk ?? ''} ml</label>
+            <label class="form-label col-xs-3 col-sm-3">糖 浓 度 ：{$list.tangnudu ?? ''} % <!-- <12.5% --></label>
+          
+        </div>
+        
+         <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">脂肪乳：{$list.zhifangru ?? ''} g/(kg.d) </label>
+            <label class="form-label col-xs-3 col-sm-3"> 10%葡萄糖酸钙针 ：{$list.te20 ?? ''} ml</label>
+            <label class="form-label col-xs-3 col-sm-3">张力：{$list.zhangli ?? ''} 张<!--   <1/3张 --></label>
+          
+        </div>
+        
+           <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">PN中纳量：{$list.pnna ?? ''}  g/(kg.d)   <!--40-50%  应<60%总热卡 --></label>
+            <label class="form-label col-xs-3 col-sm-3">  甘油磷酸钠针 ：{$list.te21 ?? ''} ml </label>
+            <label class="form-label col-xs-3 col-sm-3">氨 基 酸 ：{$list.anjisuan1 ?? ''} g/(kg·d)</label>
+          
+        </div>
+        
+           <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">PN中钾量：{$list.pnk ?? ''}  mmol/(kg.d) <!-- 转化期60-80Kcal/(kg·d) --></label>
+            <label class="form-label col-xs-3 col-sm-3">微量元素针 ：{$list.te22 ?? ''} ml  <!-- 稳定生长期105-115Kcal/(kg·d) --></label>
+            <label class="form-label col-xs-3 col-sm-3">脂 肪 乳 ：{$list.zhifangru1 ?? ''} g/(kg·d) </label>
+          
+        </div>
+        
+           <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">PN时间：{$list.pntime ?? ''} 小时  <!-- 渗透压<800mOsm/L --></label>
+            <label class="form-label col-xs-3 col-sm-3">肝素针：{$list.te23 ?? ''} ml  </label>
+          
+        </div>
+        
+               <div class="row cl">
+         
+           <label class="form-label col-xs-3 col-sm-3">PN泵速：{$list.pnsudu ?? ''} ml/h  <!-- ≤4.0/(kg·d) --></label>
+                  <label class="form-label col-xs-3 col-sm-3">创建IP：{$list.ip ?? '未知'}</label>
+      
+        </div>
+        
+          <div class="row cl">
+         <label class="form-label col-xs-3 col-sm-3">PN糖速：{$list.pntangsu ?? ''} ml/h</label>
+                           <label class="form-label col-xs-3 col-sm-3">创建地址：{$list.city ?? '未知'}</label>
+         
+          
+        </div>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script>
+    $(function () {
+        $("[name='status'][value='{$list.status ?? '1'}']").attr("checked",true);
+
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+        $("#form").Validform({
+            tiptype:2,
+            ajaxPost:true,
+            showAllError:true,
+            callback:function(ret){
+                ajax_progress(ret);
+            }
+        });
+    })
+</script>
+{/block}

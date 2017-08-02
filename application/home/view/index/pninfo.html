@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="renderer" content="webkit" />
+<meta content="telephone=no" name="format-detection" />
+<title>患者数据</title>
+<link rel="stylesheet" href="__STATIC__/css/common.css">
+    <link rel="stylesheet" href="__STATIC__/css/style.css">
+    <script src="__STATIC__/js/flexible.js"></script>
+</head>
+<body>
+    <div class="container data-container">
+      <div class="data-info">
+        <div>患者姓名：{$username}</div>
+        <p>初录入时间：{$time|date='Y-m-d H:i:s',###}</p>
+      </div>
+      <div class="data-bd">
+        <div class="data-left">
+          <div class="tit">统计项目</div>
+          <div>输液方式</div>
+          <div>体重</div>
+          <div>足月儿奶</div>
+          <div>全天总液量</div>
+          <div>PN液量</div>
+          <div>PN中纳量</div>
+          <div>PN中钾量</div>
+          <div>PN时间</div>
+          <div>PN泵速</div>
+        </div>
+        <div class="data-all">
+        <div class="data-con">
+          {volist name="list" id="vo"}
+        
+          <div class="data-day">
+            <div class="tit">第{$vo.day}</div>
+            <div>{$vo.fangshi}</div>
+            <div>{$vo.tizhong}kg</div>
+        
+            <div>{$vo.val1}ml/Kg</div>
+            <div>{$vo.allday}ml</div>
+            <div>{$vo.pn}mmol(kg·d)</div>
+            <div>{$vo.pnna}ml</div>
+            <div>{$vo.pnk}ml</div>
+            <div>{$vo.pntime}ml</div>
+             <div>{$vo.pnsudu}ml</div>
+          </div>
+          {/volist}
+          
+        
+        </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

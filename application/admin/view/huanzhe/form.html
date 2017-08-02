@@ -1,0 +1,21 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <input type="text" class="input-text" style="width:250px" placeholder="姓名" name="username" value="{$Request.param.username}">
+
+    <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+    
+    
+</form>
+<form class="mb-20" method="get" action="/admin/huanzhe/export">
+
+
+ <div class="cl pd-5 bg-1 bk-gray">
+        <span class="l">
+        
+<form action="" target="_blank" method="post" action>
+    <button class="btn btn-success" type="submit">导出Excel</button>
+    <input type="hidden" name="keyword" value="{$Request.param.username ?? ''}">
+</form>        </span>
+       
+    </div>
+    
+    </form>

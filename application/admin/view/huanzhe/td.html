@@ -1,0 +1,13 @@
+
+        
+<td><?php echo getmobileByUid($vo['user_id']);?></td>
+<td>{$vo.username|high_light=$Request.param.username}</td>
+<td>{$vo.day}</td>
+<td>{$vo.fangshi}</td>
+<td>{$vo.allday}</td>
+<td>{$vo.pn}</td>
+<td>{$vo.pnna}</td>
+<td>{$vo.pnk}</td>
+<td>{$vo.pntime}</td>
+<td>{$vo.add_time|date='Y-m-d H:i:s',###}</td>
+<td>{$vo.city ?? '未知'}</td>

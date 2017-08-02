@@ -1,0 +1,283 @@
+[ 2017-07-20T10:01:41+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.119971s][吞吐率：8.34req/s] [内存消耗：4,101.32kb] [文件加载：62]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.018942s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-20T10:04:46+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.072662s][吞吐率：13.76req/s] [内存消耗：4,377.63kb] [文件加载：68]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007266s ]
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\xampp\htdocs\tpadmin\application\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类不存在:app\common\logic\AdminNode[D:\xampp\htdocs\tpadmin\thinkphp\library\think\Loader.php:390]
+
+---------------------------------------------------------------
+[ 2017-07-20T10:05:13+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.080321s][吞吐率：12.45req/s] [内存消耗：4,635.41kb] [文件加载：73]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006129s ]
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\xampp\htdocs\tpadmin\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\tpadmin\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: groups[D:\xampp\htdocs\tpadmin\runtime\temp\d7bab3160c237a1581540ed7be5c2368.php:83]
+
+---------------------------------------------------------------
+[ 2017-07-20T10:22:45+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.172822s][吞吐率：5.79req/s] [内存消耗：5,205.49kb] [文件加载：72]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010294s ]
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\xampp\htdocs\tpadmin\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\tpadmin\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.087196s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023682s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.037216s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Firefox(54.0)' , 'http://admin.tll.com/home/index/index.html' , 'home' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1500517365) [ RunTime:0.005403s ]
+
+---------------------------------------------------------------
+[ 2017-07-20T11:05:05+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.126313s][吞吐率：7.92req/s] [内存消耗：5,016.95kb] [文件加载：69]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.013710s ]
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\xampp\htdocs\tpadmin\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\tpadmin\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.030760s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003842s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010120s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Firefox(54.0)' , 'http://admin.tll.com/home/index/index.html' , 'home' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1500519905) [ RunTime:0.001150s ]
+
+---------------------------------------------------------------
+[ 2017-07-20T11:06:40+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.080105s][吞吐率：12.48req/s] [内存消耗：4,369.21kb] [文件加载：68]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007227s ]
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\xampp\htdocs\tpadmin\application\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: current_login_loc[D:\xampp\htdocs\tpadmin\application\home\controller\Index.php:30]
+
+---------------------------------------------------------------
+[ 2017-07-20T11:06:59+08:00 ] 127.0.0.1 127.0.0.1 GET /home/index/index.html
+[ log ] admin.tll.com/home/index/index.html [运行时间：0.142514s][吞吐率：7.02req/s] [内存消耗：5,016.67kb] [文件加载：69]
+[ info ] [ LANG ] D:\xampp\htdocs\tpadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.tll.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8j3gmvukuv0bucao4k5949hu50; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.012815s ]
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\xampp\htdocs\tpadmin\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\tpadmin\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.032089s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001337s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.009770s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 10' , 'Firefox(54.0)' , 'http://admin.tll.com/home/index/index.html' , 'home' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1500520019) [ RunTime:0.000537s ]
+
+---------------------------------------------------------------
